@@ -101,6 +101,7 @@ h6 {
   left: 90%;
   font-size: 30px;
   color: #3971b1;
+  z-index: 99;
 }
 
 .mobileform .mainform button {
@@ -352,6 +353,7 @@ a {
 }
 
 .right h2 {
+  font-family: museo_slab300, Arial, Helvetica, sans-serif;
   margin-top: 60px;
   font-size: 28px;
   color: #383838;
@@ -360,6 +362,7 @@ a {
 }
 
 .right .contactlinks {
+  font-family: HelveticaNeue, Arial, Helvetica, sans-serif;
   margin-top: 50px;
   font-size: 16px;
   color: #8e8e8e;
@@ -388,6 +391,7 @@ a {
   height: 100%;
   color: #3971b1;
   font-size: 16px;
+  padding-left: 30px;
   padding-top: 20px;
   border: none;
   outline: none;
@@ -423,7 +427,7 @@ a {
 .mainform .content-name {
   position: absolute;
   bottom: 5px;
-  left: 0px;
+  left: 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -585,6 +589,8 @@ a {
   bottom: 50%;
   right: 27%;
   z-index: -1;
+  -webkit-animation: animateHeart 1.2s infinite;
+          animation: animateHeart 1.2s infinite;
 }
 
 #contactlinks {
@@ -802,6 +808,11 @@ footer {
   font-size: 14px;
 }
 
+.footerarrow .goUp a:hover {
+  -webkit-animation: bounce 1.2s 1;
+          animation: bounce 1.2s 1;
+}
+
 .lastrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,6 +881,10 @@ footer {
     overflow-x: hidden;
   }
   .right h2 {
+    font-size: 24px;
+  }
+  .right h3 {
+    font-family: museo_slab300, Arial, Helvetica, sans-serif;
     font-size: 24px;
   }
   .right .contactlinks {
@@ -985,6 +1000,98 @@ footer {
   }
   .footer {
     margin-top: 75px;
+  }
+}
+
+@-webkit-keyframes animateHeart {
+  0% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  10% {
+    -webkit-transform: rotate(45deg) scale(0.9);
+            transform: rotate(45deg) scale(0.9);
+  }
+  15% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  10% {
+    -webkit-transform: rotate(45deg) scale(0.9);
+            transform: rotate(45deg) scale(0.9);
+  }
+  15% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(0.8);
+            transform: rotate(45deg) scale(0.8);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  10% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  15% {
+    -webkit-transform: scale(-15px);
+            transform: scale(-15px);
+  }
+  50% {
+    -webkit-transform: scale(-10px);
+            transform: scale(-10px);
+  }
+  100% {
+    -webkit-transform: scale(-5px);
+            transform: scale(-5px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  10% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  15% {
+    -webkit-transform: scale(-15px);
+            transform: scale(-15px);
+  }
+  50% {
+    -webkit-transform: scale(-10px);
+            transform: scale(-10px);
+  }
+  100% {
+    -webkit-transform: scale(-5px);
+            transform: scale(-5px);
   }
 }
 /*# sourceMappingURL=style.css.map */
