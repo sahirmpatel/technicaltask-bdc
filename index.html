@@ -7,96 +7,63 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
     <title>Machine-Test</title>
-    <link rel="stylesheet" href="./public/styles/style.css" />
-    <script src="https://kit.fontawesome.com/9f7bb37ebd.js" crossorigin="anonymous"></script>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="/public/styles/normalize.css" />
 
+    <link rel="stylesheet" href="/public/styles/style.css" />
   </head>
   <body>
-   
-    <div class="container">
-      <!-- <div class="header">
-        <div class="nav">
-          <input type="checkbox" id="nav-check" />
-          <div class="nav-header">
-            <div class="nav-title">
-              <div class="logobox">
-                LOGO
-              </div>
-            </div>
-          </div>
-          <div class="nav-btn">
-            <label for="nav-check">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-          </div>
-
-          <div class="nav-links">
-            <a href="#">PROJECTS</a>
-            <a href="#">ABOUT</a>
-            <a href="#">NRI AREA</a>
-            <a href="#">NEWS & THOUGHTS</a>
-            <a id="end" href="#">CONTACT</a>
-          </div>
-        </div>
-        <hr />
-        <p>
-          Lorem ipsum dolor sit amet - consetetur sadipscing elitr
-        </p>
-      </div> -->
-    <div id="topofthepage" class="header">
-      <a href="" class="logo">      <div class="logobox" >LOGO</div>
-      </a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#">PROJECTS</a></li>
-    <li><a href="#">ABOUT</a></li>
-    <li><a href="#">NRI AREA</a></li>
-    <li><a href="#">NEWS & THOUGHTS</a></li>
-    <li ><a style="padding-right: 0px;"  href="#">CONTACT</a></li>
-
-  </ul>
-    </div>
-    <p id="subnavheading" class="d-md-none" >Lorem ipsum dolor sit amet - consetetur sadipscing elitr</p>
+    <div class="maincontainer">
+      <!-- header / navbar -->
+      <div id="topofthepage" class="header">
+        <a href="" class="logo"><div class="logobox">LOGO</div> </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="#">projects</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">nri area</a></li>
+          <li><a href="#">news &amp; thoughts</a></li>
+          <li><a style="padding-right: 0px;" href="#">contact</a></li>
+        </ul>
+      </div>
+      <p id="subnavheading" class="d-md-none">
+        Lorem ipsum dolor sit amet - consetetur sadipscing elitr
+      </p>
     </div>
 
-<!-- alt header -->
-<!-- <header class="header">
-  <a href="" class="logo">CSS Nav</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a href="#work">Our Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#careers">Careers</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</header> -->
- 
     <!-- main content -->
     <div class="maincontent">
-      <div class="container">
+      <div class="maincontainer">
         <div class="contentflex">
+          <!-- left hand part -->
           <div class="left d-md-none">
             <h1>Contact Us</h1>
             <h2>When we aren’t changing landscapes, we’re making headlines.</h2>
             <h3>Send us an Enquiry</h3>
-            <div class="mainform ">
+            <!-- Enquiry form -->
+            <div class="mainform">
               <div class="form">
-                <div class="form-group ">
+                <div class="form-group">
                   <input type="text" name="name" autocomplete="off" required />
-                  <label for="name" class="label-name"><span class="content-name">Name</span></label>
+                  <label for="name" class="label-name"
+                    ><span class="content-name">Name</span></label
+                  >
                 </div>
-             
-                <div class="form-group ">
+
+                <div class="form-group">
                   <input type="text" name="email" autocomplete="off" required />
-                  <label for="email" class="label-name"><span class="content-name">Email Address</span></label>
+                  <label for="email" class="label-name"
+                    ><span class="content-name">Email Address</span></label
+                  >
                 </div>
-                <div class="form-group ">
+                <div class="form-group">
                   <input type="text" name="phone" autocomplete="off" required />
-                  <label for="phone" class="label-name"><span class="content-name">Mobile Number</span></label>
+                  <label for="phone" class="label-name"
+                    ><span class="content-name">Mobile Number</span></label
+                  >
                 </div>
                 <!-- custom select -->
                 <div class="custom-select">
@@ -105,32 +72,38 @@
                     <option value="1">Projects </option>
                     <option value="2">Media </option>
                     <option value="3">Career </option>
-                    
                   </select>
                 </div>
 
-                <div id="hiddendropdown" style="margin-top: 20px;" class="custom-select ">
+                <div
+                  id="hiddendropdown"
+                  style="margin-top: 20px;"
+                  class="custom-select"
+                >
                   <select>
                     <option value="0">Select Project</option>
-    <option value="1">Project 1</option>
-    <option value="2">Project 2</option>
-    <option value="3">Project 3</option>
-    <option value="4">Project 4</option>
-    <option value="5">Project 5</option>
-    <option value="6">Project 6</option>
-   
+                    <option value="1">Project 1</option>
+                    <option value="2">Project 2</option>
+                    <option value="3">Project 3</option>
+                    <option value="4">Project 4</option>
+                    <option value="5">Project 5</option>
+                    <option value="6">Project 6</option>
                   </select>
                 </div>
-                <button type="submit">Send <span > <i class="fas fa-arrow-right"></i> </span> </button>
+                <button type="submit">
+                  Send <span> <i class="fas fa-arrow-right"></i> </span>
+                </button>
               </div>
             </div>
           </div>
+
+          <!-- right hand part -->
           <div class="right">
             <div class="map">
-              <img id="mainmap" src="./public/assets/mapbig.png" alt="" />
-              <img id="tracker" src="./public/assets/Group 1628.svg" alt="" />
+              <img id="mainmap" src="/public/assets/Image 3.png" alt="" />
+              <img id="tracker" src="/public/assets/Group 1628.svg" alt="" />
             </div>
-                      <h2>
+            <h2>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </h2>
@@ -146,103 +119,118 @@
               >
             </div>
             <a id="mobilelink" href="#topform">
-            <button onclick="togglepopup()" id="mobilebutton">Send us an Enquiry</button>
-          </a>
-
-          
-
+              <button onclick="togglepopup()" id="mobilebutton">
+                Send us an Enquiry
+              </button>
+            </a>
+            <!-- sales and Redevelopment section along with hidden part -->
             <div class="salesandredev">
-              
               <h3>Sales Enquiry</h3>
               <div class="salesandredevmobile hidden">
                 <p class="title">Phone</p>
-                <p class="content" >+91 000 0000 000</p>
+                <p class="content">+91 000 0000 000</p>
               </div>
               <div class="salesandredevmobile hidden">
                 <p class="title">Email</p>
-                <p class="content" >test1@gmail.com</p>
+                <p class="content">test1@gmail.com</p>
               </div>
               <div class="visible">
-                <a id="contactlinks" href="tel:123-456-7890">+91 000 0000 000</a>
-              <br />
-              <a id="contactlinks" href="mailto:sahir@example.com"
-                >test1@gmail.com</a
-              >
+                <a id="contactlinks" href="tel:123-456-7890"
+                  >+91 000 0000 000</a
+                >
+                <br />
+                <a id="contactlinks" href="mailto:sahir@example.com"
+                  >test1@gmail.com</a
+                >
               </div>
             </div>
             <div class="salesandredev">
               <h3>Redevelopment Centre</h3>
-              
+
               <div class="salesandredevmobile hidden">
                 <p class="title">Phone</p>
-                <p class="content" >+91 000 0000 000</p>
+                <p class="content">+91 000 0000 000</p>
               </div>
               <div class="salesandredevmobile hidden">
                 <p class="title">Email</p>
-                <p class="content" >test2@gmail.com</p>
+                <p class="content">test2@gmail.com</p>
               </div>
               <div class="visible">
-                <a id="contactlinks" href="tel:123-456-7890">+91 000 0000 000</a>
-              <br />
-              <a id="contactlinks" href="mailto:sahir@example.com"
-                >test2@gmail.com</a
-              >
+                <a id="contactlinks" href="tel:123-456-7890"
+                  >+91 000 0000 000</a
+                >
+                <br />
+                <a id="contactlinks" href="mailto:sahir@example.com"
+                  >test2@gmail.com</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- form popup on mobile devices -->
     <div id="topform" class="mobileform hidden mobileformflex">
       <a onclick="togglepopup()" href="#"><i class="fas fa-times"></i></a>
       <!-- <button onclick="togglepopup()">Close popup</button> -->
       <div class="popupcontainer">
-      <div class="mainform">
-        <div class="form">
-          <div class="form-group ">
-            <input type="text" name="name" autocomplete="off" required />
-            <label for="name" class="label-name"><span class="content-name">Name</span></label>
-          </div>
-       
-          <div class="form-group ">
-            <input type="text" name="email" autocomplete="off" required />
-            <label for="email" class="label-name"><span class="content-name">Email Address</span></label>
-          </div>
-          <div class="form-group ">
-            <input type="text" name="phone" autocomplete="off" required />
-            <label for="phone" class="label-name"><span class="content-name">Mobile Number</span></label>
-          </div>
-          <!-- custom select -->
-          <div class="custom-select">
-            <select>
-              <option value="0">Query Type </option>
-              <option value="1">Projects </option>
-              <option value="2">Media </option>
-              <option value="3">Career </option>
-              
-            </select>
-          </div>
+        <div class="mainform">
+          <div class="form">
+            <div class="form-group">
+              <input type="text" name="name" autocomplete="off" required />
+              <label for="name" class="label-name"
+                ><span class="content-name">Name</span></label
+              >
+            </div>
 
-          <div id="hiddendropdown" style="margin-top: 20px;" class="custom-select ">
-            <select>
-              <option value="0">Select Project</option>
-<option value="1">Project 1</option>
-<option value="2">Project 2</option>
-<option value="3">Project 3</option>
-<option value="4">Project 4</option>
-<option value="5">Project 5</option>
-<option value="6">Project 6</option>
+            <div class="form-group">
+              <input type="text" name="email" autocomplete="off" required />
+              <label for="email" class="label-name"
+                ><span class="content-name">Email Address</span></label
+              >
+            </div>
+            <div class="form-group">
+              <input type="text" name="phone" autocomplete="off" required />
+              <label for="phone" class="label-name"
+                ><span class="content-name">Mobile Number</span></label
+              >
+            </div>
+            <!-- custom select -->
+            <div class="custom-select">
+              <select>
+                <option value="0">Query Type </option>
+                <option value="1">Projects </option>
+                <option value="2">Media </option>
+                <option value="3">Career </option>
+              </select>
+            </div>
 
-            </select>
+            <div
+              id="hiddendropdown"
+              style="margin-top: 20px;"
+              class="custom-select"
+            >
+              <select>
+                <option value="0">Select Project</option>
+                <option value="1">Project 1</option>
+                <option value="2">Project 2</option>
+                <option value="3">Project 3</option>
+                <option value="4">Project 4</option>
+                <option value="5">Project 5</option>
+                <option value="6">Project 6</option>
+              </select>
+            </div>
+            <button onclick="togglepopup()" type="submit">
+              Send <span></span>
+            </button>
           </div>
-          <button onclick="togglepopup()" type="submit">Send <span ></span> </button>
         </div>
-      </div> 
-    </div>     
+      </div>
     </div>
+
     <!-- footer -->
-    <footer class="" >
-      <div class="container">
+    <footer>
+      <div class="maincontainer">
         <div class="footerflex">
           <div class="footerlogo">
             <div class="logobox">
@@ -251,14 +239,18 @@
           </div>
           <div class="footersitemap">
             <ul>
-              <div class="sites"><li><a href="#">Projects</a></li>
+              <div class="sites">
+                <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">NRI Area</a></li>
-                <li><a href="#">News & Thoughts</a></li></div>
-              <div class="sites"><li><a href="#">Employee Corner</a></li>
+                <li><a href="#">News & Thoughts</a></li>
+              </div>
+              <div class="sites">
+                <li><a href="#">Employee Corner</a></li>
                 <li><a href="#">CSR</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Disclaimer</a></li></div>
+                <li><a href="#">Disclaimer</a></li>
+              </div>
             </ul>
           </div>
           <div class="footersubscribe">
@@ -279,83 +271,82 @@
         </div>
         <div class="lastrow">
           <p id="iso">An ISO 9001:2008 Certified Company</p>
-          <p id="copyright">&#169 copyrights 2019</p>
+          <p id="copyright">&copy copyrights 2019</p>
           <img src="/public/assets/Group 613.svg" alt="" />
         </div>
       </div>
     </footer>
 
     <script>
-            var hiddendrop = document.getElementById("hiddendropdown");
+      var hiddendrop = document.getElementById("hiddendropdown");
 
-            hiddendrop.style.display = "none";
+      hiddendrop.style.display = "none";
 
       var x, i, j, l, ll, selElmnt, a, b, c;
-      /*look for any elements with the class "custom-select":*/
       x = document.getElementsByClassName("custom-select");
       l = x.length;
       for (i = 0; i < l; i++) {
         selElmnt = x[i].getElementsByTagName("select")[0];
         ll = selElmnt.length;
-        /*for each element, create a new DIV that will act as the selected item:*/
         a = document.createElement("DIV");
         a.setAttribute("class", "select-selected");
         a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
         x[i].appendChild(a);
-        /*for each element, create a new DIV that will contain the option list:*/
         b = document.createElement("DIV");
         b.setAttribute("class", "select-items select-hide");
         for (j = 1; j < ll; j++) {
-          /*for each option in the original select element,
-          create a new DIV that will act as an option item:*/
           c = document.createElement("DIV");
           c.innerHTML = selElmnt.options[j].innerHTML;
-          c.addEventListener("click", function(e) {
-              /*when an item is clicked, update the original select box,
+          c.addEventListener("click", function (e) {
+            /*when an item is clicked, update the original select box,
               and the selected item:*/
-              showDropdown();
-              var y, i, k, s, h, sl, yl;
-              s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-              sl = s.length;
-              h = this.parentNode.previousSibling;
-              for (i = 0; i < sl; i++) {
-                if (s.options[i].innerHTML == this.innerHTML) {
-                  s.selectedIndex = i;
-                  h.innerHTML = this.innerHTML;
-                  y = this.parentNode.getElementsByClassName("same-as-selected");
-                  yl = y.length;
-                  for (k = 0; k < yl; k++) {
-                    y[k].removeAttribute("class");
-                  }
-                  this.setAttribute("class", "same-as-selected");
-                  break;
+            /* Show second dropdown when item from first is selected  */
+            showDropdown();
+            var y, i, k, s, h, sl, yl;
+            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+            sl = s.length;
+            h = this.parentNode.previousSibling;
+            for (i = 0; i < sl; i++) {
+              if (s.options[i].innerHTML == this.innerHTML) {
+                s.selectedIndex = i;
+                h.innerHTML = this.innerHTML;
+                y = this.parentNode.getElementsByClassName("same-as-selected");
+                yl = y.length;
+                for (k = 0; k < yl; k++) {
+                  y[k].removeAttribute("class");
                 }
+                this.setAttribute("class", "same-as-selected");
+                break;
               }
-              h.click();
+            }
+            h.click();
           });
           b.appendChild(c);
         }
         x[i].appendChild(b);
-        a.addEventListener("click", function(e) {
-            /*when the select box is clicked, close any other select boxes,
-            and open/close the current select box:*/
-            e.stopPropagation();
-            closeAllSelect(this);
-            this.nextSibling.classList.toggle("select-hide");
-            this.classList.toggle("select-arrow-active");
-          });
+        a.addEventListener("click", function (e) {
+          e.stopPropagation();
+          closeAllSelect(this);
+          this.nextSibling.classList.toggle("select-hide");
+          this.classList.toggle("select-arrow-active");
+        });
       }
       function closeAllSelect(elmnt) {
         /*a function that will close all select boxes in the document,
         except the current select box:*/
-        var x, y, i, xl, yl, arrNo = [];
+        var x,
+          y,
+          i,
+          xl,
+          yl,
+          arrNo = [];
         x = document.getElementsByClassName("select-items");
         y = document.getElementsByClassName("select-selected");
         xl = x.length;
         yl = y.length;
         for (i = 0; i < yl; i++) {
           if (elmnt == y[i]) {
-            arrNo.push(i)
+            arrNo.push(i);
           } else {
             y[i].classList.remove("select-arrow-active");
           }
@@ -370,20 +361,21 @@
       then close all select boxes:*/
       document.addEventListener("click", closeAllSelect);
 
-
       function showDropdown() {
-  if (hiddendrop.style.display === "none") {
-    hiddendrop.style.display = "block";
-  } 
-}
+        if (hiddendrop.style.display === "none") {
+          hiddendrop.style.display = "block";
+        }
+      }
 
-  const popup=document.querySelector('.mobileform');
-  
-  function togglepopup(){
-    popup.classList.toggle('hidden')
-  }
+      const popup = document.querySelector(".mobileform");
 
-      </script>
-      
+      function togglepopup() {
+        popup.classList.toggle("hidden");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/9f7bb37ebd.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
